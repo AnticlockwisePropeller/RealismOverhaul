@@ -1,0 +1,28 @@
+@PART[bluedog_ablestarEngine]:FOR[RealPlume]:NEEDS[SmokeScreen]
+{
+	@MODULE[ModuleEngines*]
+	{
+		@name = ModuleEnginesRF
+		%powerEffectName = Hypergolic-Lower
+		!runningEffectName = DELETE
+		!fxOffset = DELETE
+	}
+	@MODULE[ModuleEngineConfigs]
+	{
+		%type = ModuleEnginesRF
+	}
+	%PLUME
+	{
+		%name = Hypergolic-Lower
+		%transformName = thrustTransform
+		%localRotation = 0,0,0
+		%localPosition = 0,0,0
+		%fixedScale = 1
+		%energy = 1
+		%speed = 1
+		%plumePosition = 0,0,0
+		%plumeScale = 1
+		%flarePosition = 0,0,0.25
+		%flareScale = 0.8
+	}
+}
