@@ -1,0 +1,5 @@
+// Delete BDB Modules that would conflict with RO modset
+@PART[*]:HAS[MODULE[ModuleBdbEngineLife]]:BEFORE[RealismOverhaul]
+{
+	!MODULE[ModuleBdbEngineLife]{}
+}
